@@ -1,0 +1,67 @@
+.about-section {
+	width: 100%;
+	color: white;
+
+	.about-title {
+		display: flex;
+		gap: 5rem;
+
+		h2 {
+			padding-left: 3rem;
+		}
+
+		hr {
+			width: 20rem;
+			color: #80cfd5;
+		}
+	}
+
+	.about-content {
+		display: flex;
+		padding-top: 1rem;
+
+		.content-text {
+			flex: 2;
+			padding-left: 1rem;
+			color: #ffffff80;
+
+			.highlight {
+				color: #80cfd5;
+			}
+
+			.tech-list {
+				width: 30rem;
+				display: flex;
+				flex-wrap: wrap;
+				list-style: none;
+				padding-left: 1rem;
+				justify-content: space-between;
+
+				.list-item {
+					width: 10rem;
+					padding: 0.5rem 0;
+
+					.tech-icon {
+						color: #80cfd5;
+						margin-right: 0.5rem;
+					}
+				}
+			}
+		}
+
+		.content-image {
+			flex: 1;
+			margin: 0 5rem;
+			border: 1px solid white;
+			text-align: center;
+			align-self: center;
+			padding: 1rem;
+			border-radius: 10px;
+
+			img {
+				width: 18rem;
+				height: 18rem;
+			}
+		}
+	}
+}

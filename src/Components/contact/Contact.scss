@@ -1,0 +1,96 @@
+/*  Contact and Login  */
+.form {
+	border-radius: 50px;
+	padding: 1rem 4rem 2rem;
+	box-shadow: -3px 3px 0 rgba(255, 255, 255, 0.5),
+		3px -3px 0 rgba(255, 255, 255, 0.5);
+
+	.form-group {
+		margin-top: 1rem;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.form-text {
+			.form-textbox {
+				padding-top: 1rem;
+				display: flex;
+				flex-direction: column;
+				color: white;
+			}
+
+			input {
+				width: 20rem;
+				height: 3rem;
+				border: 1px solid white;
+				outline: 0;
+				padding: 2%;
+				border-radius: 5px;
+				background: transparent;
+				margin: 1rem 2rem 0 0;
+				color: #fbc108;
+
+				&::placeholder {
+					color: white;
+				}
+
+				&:focus {
+					color: white;
+					background: rgba(128, 207, 213, 0.1);
+				}
+			}
+		}
+
+		.form-msgbox {
+			margin-top: 2rem;
+
+			textarea {
+				background: transparent;
+				outline: 0;
+				border-radius: 5px;
+				border: 1px solid white;
+				display: flex;
+				margin-top: 1rem;
+				padding: 2%;
+				color: #fbc108;
+
+				&::placeholder {
+					color: white;
+				}
+
+				&:focus {
+					color: white;
+					background: rgba(128, 207, 213, 0.1);
+				}
+			}
+		}
+	}
+	.form-btn {
+		margin-top: 2rem;
+		text-align: center;
+
+		button {
+			padding: 5px;
+			background: transparent;
+			border: 2px solid white;
+			width: 10rem;
+			height: 3rem;
+			border-radius: 20px;
+			outline: 0;
+			color: white;
+			cursor: pointer;
+
+			&:hover {
+				color: #fbc108;
+				border: 2px solid #fbc108;
+			}
+
+			&:active {
+				color: green;
+				border: 1px solid green;
+			}
+		}
+	}
+}

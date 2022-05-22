@@ -1,0 +1,17 @@
+.experience-section {
+	color: white;
+
+	.experience-title {
+		display: flex;
+		gap: 5rem;
+
+		h2 {
+			padding-left: 3rem;
+		}
+
+		hr {
+			width: 20rem;
+			color: #80cfd5;
+		}
+	}
+}
