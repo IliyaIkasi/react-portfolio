@@ -5,6 +5,10 @@ import Projects from "../project/Projects";
 import Resume from "../resume/Resume";
 import Contact from "../contact/Contact";
 // import { projects, experience } from "../../data";
+import CAM from "../../Images/Crops&Machines.jpg";
+import CAM_ALT from "../../Images/CAM.png";
+import FB from "../../Images/Cloned-Facebook.png";
+import SMS from "../../Images/Courses.png";
 import { IconContext } from "react-icons";
 import {
 	FaGithub,
