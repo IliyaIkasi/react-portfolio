@@ -25,7 +25,7 @@ function Navbar() {
 			>
 				<div className="container">
 					<Link to="" className="navbar-brand">
-						Navbar
+						<h1>N</h1>
 					</Link>
 					<button
 						className="navbar-toggler"

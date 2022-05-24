@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import Projects from "../project/Projects";
 import Resume from "../resume/Resume";
 import Contact from "../contact/Contact";
-import { projects } from "../../Data";
+import { projects, experience } from "../../data";
 import { IconContext } from "react-icons";
 import {
 	FaGithub,
@@ -112,7 +112,7 @@ const Home = () => {
 				</div>
 				<div id="experience" className="experience-container">
 					<div className="experience-main">
-						<Experience />
+						<Experience experience={experience} />
 					</div>
 				</div>
 				<div id="projects" className="projects-container">

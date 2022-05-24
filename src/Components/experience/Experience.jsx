@@ -1,26 +1,69 @@
 import "./Experience.scss";
+import { FaCaretRight } from "react-icons/fa";
+import { useState } from "react";
 
-function Experience() {
+const Experience = ({ experience }) => {
+	const [jobs, setJobs] = useState(experience);
+
+	const selectJob = (e) => {
+		const value = e.target.id;
+		const filterJob =
+			value === "Apple"
+				? experience
+				: experience.filter((item) => item.org === value);
+		setJobs(filterJob);
+	};
+	const job = jobs[0];
+
 	return (
 		<div className="experience-section">
 			<div className="experience-title">
 				<h2>Where I,ve Worked</h2>
 				<hr />
 			</div>
-			<div className="exprience-content">
+
+			<div className="experience-content">
 				<div className="job-name">
-					<div className="job-title">Apple</div>
-					<div className="job-title">Microsoft</div>
-					<div className="job-title">Dell</div>
-					<div className="job-title">HP</div>
-					<div className="job-title">NetBeans</div>
+					{experience.map((item) => (
+						<div
+							className={`job-title ${job.status}`}
+							id={item.org}
+							onClick={selectJob}
+							key={item.id}
+						>
+							<span>{item.org}</span>
+						</div>
+					))}
 				</div>
 				<div className="job-desc">
-					<div className="role"></div>
+					<div className="role">
+						<h3>
+							{job.role} <span>@ {job.org}</span>
+						</h3>
+					</div>
+					<div className="duration">
+						<h6>
+							{job.sDate} - {job.eDate}
+						</h6>
+					</div>
+					<div className="desc">
+						<div className="desc-item">
+							<FaCaretRight className="desc-icon" />
+							{job.desc}
+						</div>
+						<div className="desc-item">
+							<FaCaretRight className="desc-icon" />
+							{job.desc}
+						</div>
+						<div className="desc-item">
+							<FaCaretRight className="desc-icon" />
+							{job.desc}
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	);
-}
+};
 
 export default Experience;
