@@ -18,7 +18,7 @@ const Experience = ({ experience }) => {
 	return (
 		<div className="experience-section">
 			<div className="experience-title">
-				<h2>Where I,ve Worked</h2>
+				<h2>Where I've Worked On</h2>
 				<hr />
 			</div>
 
@@ -26,7 +26,7 @@ const Experience = ({ experience }) => {
 				<div className="job-name">
 					{experience.map((item) => (
 						<div
-							className={`job-title ${job.status}`}
+							className="job-title"
 							id={item.org}
 							onClick={selectJob}
 							key={item.id}

@@ -2,6 +2,10 @@ import React from "react";
 import "./Contact.scss";
 
 const Contact = () => {
+	const submitForm = (e) => {
+		e.preventDefault();
+		alert("Database Temporarily Unavailable");
+	};
 	return (
 		<div>
 			<section>
@@ -28,13 +32,15 @@ const Contact = () => {
 								placeholder="Text Message..."
 								name="message"
 								id="message"
-								cols="40"
-								rows="5"
+								// cols="40"
+								// rows="5"
 							></textarea>
 						</div>
 					</div>
 					<div className="form-btn register-btn">
-						<button type="submit">Register</button>
+						<button type="submit" onClick={submitForm}>
+							Submit
+						</button>
 					</div>
 				</form>
 			</section>

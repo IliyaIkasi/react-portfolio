@@ -235,7 +235,52 @@
 }
 
 @media screen and (max-width: 400px) {
-	// .section-two {
-	// 	// width: 10rem;
-	// }
+	.homepage-main {
+		.section-one {
+			.sidebar-content {
+				display: none;
+			}
+		}
+		.section-two {
+			width: 100%;
+
+			.main-container {
+				width: 100%;
+				height: 100vh;
+				font-family: "Times New Roman", Times, serif;
+				font-weight: bold;
+				display: block;
+				padding: 2rem 2rem 0;
+
+				.split-right {
+					display: none;
+				}
+			}
+
+			// EXPERIENCE SECTION
+			.experience-container {
+				width: 100%;
+				height: 100vh;
+
+				.experience-main {
+					padding-top: 5rem;
+					margin: 0 1rem;
+				}
+			}
+
+			// CONTACT SECTION
+			.contact-form {
+				height: 100vh;
+				margin: 0 2rem;
+				padding-top: 2rem;
+				color: white;
+
+				.contact-header {
+					display: flex;
+					justify-content: space-between;
+					text-align: center;
+				}
+			}
+		}
+	}
 }
